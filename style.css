@@ -29,7 +29,6 @@ a {
 html {
     background-color: #3EBFFF;
     position: relative;
-    /* scroll-behavior: smooth; */
 }
 body {
     z-index: -1;
@@ -45,7 +44,7 @@ body {
 
     display: flex;
 
-    /* position: fixed; */
+    position: fixed;
     z-index: 1000;
     min-width: 100%;
     top: 0;
@@ -498,7 +497,7 @@ h2.testimonials-container__item {
     }
 }
 
-@media (max-width: 949px) and (orientation: landscape) {
+@media (max-width: 949px) {
     html {
         background-color: green;
     }

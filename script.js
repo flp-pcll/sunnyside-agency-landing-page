@@ -6,14 +6,18 @@ menuItems.forEach(item => {
     item.addEventListener('click', smoothScroll);
 })
 arrowItem.addEventListener('click', smoothScroll);
-contactBtn.addEventListener('click', (e) => e.preventDefault());
+contactBtn.addEventListener('click', (e) => e.preventDefault()); //Did this so the button does not work when clicked.
 
+
+//Smooth scroll between the page links:
 function smoothScroll(e) {
     e.preventDefault();
+
     const href = this.getAttribute('href');
-    console.log(href);
+    const elemToOffset = document.querySelector(href).offsetTop; //the offset of the section that will scroll to top;
+    const headerHeight = document.querySelector('.header-container').offsetHeight; //total height of the fixed header elem;
 
-    const offsetTop = document.querySelector(href).offsetTop;
+    totalTop = elemToOffset - headerHeight; //total top is defined to subtract header total height;
 
-    scroll({top: offsetTop, behavior: "smooth"});
+    scroll({top: totalTop, behavior: "smooth"});
 }
