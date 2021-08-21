@@ -17,7 +17,7 @@ function smoothScroll(e) {
     const elemToOffset = document.querySelector(href).offsetTop; //the offset of the section that will scroll to top;
     const headerHeight = document.querySelector('.header-container').offsetHeight; //total height of the fixed header elem;
 
-    totalTop = elemToOffset - headerHeight; //total top is defined to subtract header total height;
+    let totalTop = elemToOffset - headerHeight; //total top is defined to subtract header total height;
 
     scroll({top: totalTop, behavior: "smooth"});
 }
