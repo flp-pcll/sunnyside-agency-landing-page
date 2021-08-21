@@ -1,0 +1,199 @@
+<!--
+  _____.__                       .__  .__   
+_/ ____\  | ______ ______   ____ |  | |  |  
+\   __\|  | \____ \\____ \_/ ___\|  | |  |  
+ |  |  |  |_|  |_> >  |_> >  \___|  |_|  |__
+ |__|  |____/   __/|   __/ \___  >____/____/ • 2021
+            |__|   |__|        \/           
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!--Barlow(600): font-family: 'Barlow', sans-serif; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&display=swap" rel="stylesheet"> 
+
+  <!--Fraunces(700, 900): font-family: 'Fraunces', serif; Titulos, etc-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet"> 
+
+  <!--Font Awesome script-->
+  <script src="https://kit.fontawesome.com/1727e3b481.js" crossorigin="anonymous"></script>
+
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--The Page Flexbox direction: column-->
+    <!--Page Flexbox Item 1-->
+    <header class="page-item header-container">
+      <div class="header-container-item logo-space" style="width: 100%;">
+        <img src="./images/logo.svg" alt="Sunnyside Logo">
+      </div>
+      <nav class="header-container-item top-nav">
+        <ul class="top-nav-menu">
+          <li class="top-nav-menu-item">
+            <a href="#">About</a>
+          </li>
+          <li class="top-nav-menu-item">
+            <a href="#serviceSection">Services</a>
+          </li>
+          <li class="top-nav-menu-item">
+            <a href="#jobsSection">Projects</a>
+          </li>
+          <li class="top-nav-menu-item contact-btn">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div role="button" class="header-container-item mobile-menu-hamburger-icon" aria-label="Menu Button">
+        <i class="fas fa-bars" style="color: white;"></i>
+      </div>
+    </header>
+
+    <!--Page Flexbox Item 2-->
+    <main class="page-item main-container">
+
+      <section class="main-container-item about-section">
+        <h1 class="about-section__title title">We Are Creatives</h1>
+        <a class="about-section__arrow-down" href="#serviceSection">
+          <img src="./images/icon-arrow-down.svg" alt="Arrow Down Icon">
+        </a>
+      </section>
+
+      <section class="main-container-item services-section" id="serviceSection">
+        <div class="services-section-item transform-brand-box">
+          <div class="transform-brand-box__item transform-brand-img"></div>
+          <div class="transform-brand-box__item transform-brand-text">
+              <h2 class="services-title">Transform your Brand</h2>
+              <p class="services-info">
+                We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
+                through compelling visuals that do most of the marketing for you.
+              </p>
+              <a href="#" class="transform-brand-link">Learn More</a>
+          </div>
+        </div>
+
+        <div class="services-section-item stand-out-box">
+          <div class="stand-out-box__item stand-out-text">
+              <h2 class="services-title">Stand out to the right audience</h2>
+              <p class="services-info">
+                Using a collaborative formula of designers, researches, photographers, videographers, and copywriters,
+                we'll build and extend your brand in digital places.
+              </p>
+              <a href="#" class="stand-out-link">Learn More</a>
+          </div>
+          <div class="stand-out-box__item stand-out-img"></div>
+        </div>
+
+        <div class="descriptive-box" id="jobsSection">
+          <div class="descriptive-box__item graphic-design">
+            <div class="graphic-design-item">
+              <h2>Graphic Design</h2>
+              <p>
+                Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+                clients’ attention.
+              </p>
+            </div>
+          </div>
+
+            <div class="descriptive-box__item photography">
+              <div class="photography-item">
+                <h2>Photography</h2>
+                <p>
+                  Increase your credibility by getting the <br> most stunning, high-quality photos that improve your business image.
+                </p>
+              </div>
+            </div>  
+          </div>  
+        </div>
+      </section>
+
+      <section class="main-container-item testimonials-section">
+          <h2 class="testimonials-container__item">Client Testimonials</h2>
+          <div class="testimonials-container__item testimonial-box"> <!--Outro Flexbox-->
+            <div class="testimonials-box-item">
+              <img src="./images/image-emily.jpg" alt="Client Emily Picture">
+              <p>
+                We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+              </p>
+              <p>Emily R.</p>
+              <p>Marketing Director</p>
+            </div>
+  
+            <div class="testimonials-box-item">
+              <img src="./images/image-thomas.jpg" alt="Client Thomas Picture">
+              <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+              <p>Thomas S.</p>
+              <p>Chief Operating Officer</p>
+            </div>
+  
+            <div class="testimonials-box-item">
+              <img src="./images/image-jennie.jpg" alt="Client Jennie Pic">
+              <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+              <p>Jennie F.</p>
+              <p>Business Owner</p>
+            </div>
+          </div>
+      </section>
+
+    </main>
+
+    <!--Page Flexbox Item 3-->
+    <section class="page-item decorative-content-section">
+      <div class="decorative-img"></div>
+      <div class="decorative-img"></div>
+      <div class="decorative-img"></div>
+      <div class="decorative-img"></div>
+    </section>
+
+    <!--Page Flexbox Item 4-->
+    <footer class="page-item footer-container">
+      <div class="footer-item footer-logo-space">
+        <img src="./images/logo.svg" alt="Sunnyside Logo" class="green-filter">
+      </div>
+      <nav class="footer-item footer-nav-menu">
+        <ul class="footer-nav-menu-items">
+          <li class="footer-nav-menu-item">
+            <a href="#">About</a>
+          </li>
+          <li class="footer-nav-menu-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="footer-nav-menu-item last-item">
+            <a href="#">Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-item footer-social-menu">
+        <a href="#" class="facebook">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#" class="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="pinterest last-item" >
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </div>
+      <small class="footer-item attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/flp-pcll">flp-pcll</a>.
+      </small>
+    </footer> 
+</body>
+</html>
