@@ -35,15 +35,20 @@ _/ ____\  | ______ ______   ____ |  | |  |
 </head>
 
 <body>
-  <!--The Page Flexbox direction: column-->
-    <!--Page Flexbox Item 1-->
+
     <header class="page-item header-container">
-      <div class="header-container-item logo-space">
+
+      <!--Header Flex Item Left-->
+      <div class="header-item__left-side logo-space">
         <a href="">
           <img src="./images/logo.svg" alt="Sunnyside Logo" style="font-size: 40px; vertical-align: middle;">
         </a>
       </div>
-      <nav class="header-container-item top-nav">
+
+      <!--Header Flex Item Right-->
+      <nav class="header-item__right-side top-nav">
+
+        <!--Top Nav Flex Item 1 - Left-->
         <ul class="top-nav-menu">
           <li class="top-nav-menu-item">
             <a href="#serviceSection" class="menu-link-about">About</a>
@@ -58,30 +63,15 @@ _/ ____\  | ______ ______   ____ |  | |  |
             <a href="/">Contact</a>
           </li>
         </ul>
-      </nav>
-      <div role="button" class="header-container-item mobile-menu-hamburger-icon" aria-label="Menu Button">
-        <i class="fas fa-bars" style="color: white;"></i>
-      </div>
-    </header>
 
-    <div class="mobile-nav-menu-container">
-      <nav class="mobile-nav-menu">
-        <ul class="mobile-nav-menu-items">
-          <li class="mobile-nav-menu-item">
-            <a href="#serviceSection" class="menu-link-about">About</a>
-          </li>
-          <li class="mobile-nav-menu-item">
-            <a href="#standOut" class="menu-link-services">Services</a>
-          </li>
-          <li class="mobile-nav-menu-item">
-            <a href="#jobsSection" class="menu-link-projects">Projects</a>
-          </li>
-          <li class="mobile-nav-menu-item contact-btn">
-            <a href="/">Contact</a>
-          </li>
-        </ul>
+        <!--Top Nav Flex Item 2 - Right-->
+        <div class="top-nav-menu-item mobile-menu-hamburger-icon">
+          <i class="fas fa-bars" style="font-size: 1.5em; color: white;"></i>
+        </div>
+
       </nav>
-    </div>
+
+    </header>
 
     <!--Page Flexbox Item 2-->
     <main class="page-item main-container">
