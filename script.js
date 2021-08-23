@@ -20,14 +20,22 @@ function smoothScroll(e) {
     let totalTop = elemToOffset - headerHeight; //total top is defined to subtract header total height;
 
     scroll({top: totalTop, behavior: "smooth"});
+
+    //Close Mobile menu after you clicked in a link on the mobile version;
+    closeMobileMenu();
 }
 
 /////////////////////////////////////////////
 
 const mobileMenuIcon = document.querySelector('.mobile-menu-hamburger-icon');
+const mobileMenu = document.querySelector('.top-nav-menu');
+
 mobileMenuIcon.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu(event) {
-    const mobileMenu = document.querySelector('.top-nav-menu');
     mobileMenu.classList.toggle('top-nav-menu-active');
+}
+
+function closeMobileMenu() {
+    mobileMenu.classList.remove('top-nav-menu-active');
 }
