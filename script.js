@@ -9,7 +9,6 @@ arrowItem.addEventListener('click', smoothScroll);
 contactBtn.addEventListener('click', (e) => e.preventDefault()); //Did this so the button does not work when clicked.
 
 
-//Smooth scroll between the page links:
 function smoothScroll(e) {
     e.preventDefault();
 
@@ -19,10 +18,11 @@ function smoothScroll(e) {
 
     let totalTop = elemToOffset - headerHeight; //total top is defined to subtract header total height;
 
-    scroll({top: totalTop, behavior: "smooth"});
+    scroll({top: totalTop, behavior: "smooth"}); //this does not work on safari;
 
     //Close Mobile menu after you clicked in a link on the mobile version;
     closeMobileMenu();
+    
 }
 
 /////////////////////////////////////////////
