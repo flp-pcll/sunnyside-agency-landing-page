@@ -21,3 +21,13 @@ function smoothScroll(e) {
 
     scroll({top: totalTop, behavior: "smooth"});
 }
+
+/////////////////////////////////////////////
+
+const mobileMenuIcon = document.querySelector('.mobile-menu-hamburger-icon');
+mobileMenuIcon.addEventListener('click', toggleMobileMenu);
+
+function toggleMobileMenu(event) {
+    const mobileMenu = document.querySelector('.top-nav-menu');
+    mobileMenu.classList.toggle('top-nav-menu-active');
+}
